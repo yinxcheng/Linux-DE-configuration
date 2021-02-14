@@ -1,4 +1,4 @@
-# Linux-DE-configuration
+# Linux Desktop Environment Configuration
 
 it contains:
 1. config files for openbox, rofi, and fbpanel
