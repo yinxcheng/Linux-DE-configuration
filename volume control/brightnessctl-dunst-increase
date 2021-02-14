@@ -1,0 +1,4 @@
+#!/bin/sh
+brightnessctl set +10
+brightness=$(brightnessctl get)
+notify-send -i /usr/share/icons/gnome/32x32/status/sunny.png Brightness: $brightness
