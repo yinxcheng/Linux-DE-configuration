@@ -1,0 +1,38 @@
+# set up a random wallpaper
+feh --bg-fill --randomize /home/yinxcheng/.config/variety/Downloaded/* &
+
+# tint2 &
+(sleep 2s & fbpanel) &
+# yabar &
+
+# amixer &
+volumeicon &
+
+# nm-applet &
+
+# compton &
+
+# sleep 15s &
+# killall mintUpdate &
+# killall mintreport-tray &
+
+# redshift &
+
+# brightnessctl &
+# inotifywatch &
+# xbacklightmon &
+# chmod o+w /sys/class/backlight/intel_backlight/brightness &
+
+# a policykit for showing authentication dialog when triggered
+lxpolkit &
+# /usr/lib/policykit-1 &
+# /usr/lib/x86_64-linux-gnu/libexec/polkit-kde-authentication-agent-1 &
+
+# notifications
+dunst -config ~/.config/dunst/dunstrc &
+# /usr/lib/mate-notification-daemon/mate-notification-daemon & # this is the default notifier. if no notifier is set, this one and mate-screensaver will automatically start
+# /usr/lib/x86_64-linux-gnu/notify-osd & # 30 MB
+# mako &
+# /usr/lib/x86_64-linux-gnu/xfce4/notifyd/xfce4-notifyd &
+
+xscreensaver -nosplash &
