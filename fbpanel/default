@@ -1,0 +1,251 @@
+Global {
+    edge = bottom
+    allign = center
+    margin = 0
+    widthtype = percent
+    width = 86
+    height = 42
+    transparent = true
+    tintcolor = #150b0b
+    alpha = 99
+    setdocktype = true
+    setpartialstrut = true
+    autohide = true
+    heightWhenHidden = 2
+    roundcorners = true
+    roundcornersradius = 7
+    layer = above
+    MaxElemHeight = 32
+    xmargin = 0
+    ymargin = 0
+    setlayer = false
+}
+Plugin {
+    type = space
+    config {
+        size = 2
+    }
+}
+Plugin {
+    type = menu
+    config {
+        IconSize = 24
+        icon = start-here
+        systemmenu {
+        }
+        separator {
+        }
+        item {
+            name = terminator
+            icon = terminator
+            action = x-terminal-emulator
+        }
+        separator {
+        }
+        item {
+            name = Lock Display
+            icon = gnome-lockscreen
+            action = /usr/bin/dm-tool lock
+        }
+        item {
+            name = Reboot
+            icon = gnome-session-reboot
+            action = reboot
+        }
+        item {
+            name = Shutdown
+            icon = gnome-session-halt
+            action = shutdown -h now
+        }
+        item {
+            name = Logout
+            icon = gnome-session-logout
+            action = /usr/lib/fbpanel/fbpanel/xlogout
+        }
+    }
+}
+Plugin {
+    type = space
+    config {
+        size = 10
+    }
+}
+Plugin {
+    type = launchbar
+    config {
+        button {
+            icon = nemo
+            tooltip = File Manager
+            action = xfe
+        }
+    }
+}
+
+Plugin {
+    type = space
+    config {
+        size = 5
+    }
+}
+
+Plugin {
+    type = launchbar
+    config {       
+        button {
+            image = /usr/share/pixmaps/mini.xterm_32x32.xpm
+            tooltip = Terminal
+            action = xterm
+        }
+    }
+}
+
+Plugin {
+    type = space
+    config {
+        size = 5
+    }
+}
+
+Plugin {
+    type = launchbar
+    config {
+        button {
+            icon = google-chrome
+            tooltip = Web Browser
+            action = x-www-browser
+        }
+    }
+}
+
+
+
+Plugin {
+    type = space
+    config {
+        size = 10
+    }
+}
+Plugin {
+    type = wincmd
+    config {
+        image = /usr/share/icons/menta/32x32/places/gnome-fs-desktop.png
+        tooltip = Left click to iconify all windows. Middle click to shade them.
+    }
+}
+Plugin {
+    type = space
+    config {
+        size = 10
+    }
+}
+Plugin {
+    type = taskbar
+    expand = true
+    config {
+        ShowIconified = true
+        ShowMapped = true
+        ShowAllDesks = false
+        tooltips = true
+        IconsOnly = false
+        MaxTaskWidth = 150
+    }
+}
+Plugin {
+    type = space
+    config {
+        size = 10
+    }
+}
+Plugin {
+    type = pager
+    config {
+        showwallpaper = false
+    }
+}
+Plugin {
+    type = space
+    config {
+        size = 10
+    }
+}
+Plugin {
+    type = mem
+    config {
+        ShowSwap = false
+    }
+}
+Plugin {
+    type = cpu
+    config {
+        Color = green
+    }
+}
+Plugin {
+    type = net
+    expand = false
+    padding = 0
+    config {
+        interface = eth0
+        TxLimit = 20
+        RxLimit = 190
+        TxColor = violet
+        RxColor = blue
+    }
+}
+Plugin {
+    type = space
+    config {
+        size = 10
+    }
+}
+
+Plugin {
+    type = tray
+}
+Plugin {
+    type = space
+    config {
+        size = 10
+    }
+}
+Plugin {
+    type = dclock
+    config {
+        ShowSeconds = false
+        HoursView = 24
+        TooltipFmt = %A %x
+    }
+}
+plugin {
+    type = battery
+}
+Plugin {
+    type = icons
+    config {
+        DefaultIcon = %%datadir%%/fbpanel/images/default.xpm
+        application {
+            icon = gnome-terminal
+            ClassName = XTerm
+        }
+        application {
+            icon = gnome-terminal
+            ClassName = mlterm
+        }
+        application {
+            icon = gnome-terminal
+            ClassName = URxvt
+        }
+        application {
+            icon = gnome-emacs
+            ClassName = Emacs
+        }
+        application {
+            icon = mozilla-firefox
+            ClassName = Firefox-bin
+        }
+        application {
+            icon = mozilla-firefox
+            ClassName = Firefox
+        }
+    }
+}
