@@ -1,7 +1,7 @@
 # Linux Desktop Environment Configuration
 
 it contains:
-1. config files for openbox, rofi, and fbpanel
+1. config files for openbox, rofi, xterm, fusuma, and fbpanel
 2. shell scripts for volume control
 
 Tips:
