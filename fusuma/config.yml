@@ -25,6 +25,16 @@ swipe:
 pinch:
   in:
     command: "xdotool keydown ctrl click 4 keyup ctrl" # Zoom in
+    threshold: 0.1
   out:
     command: "xdotool keydown ctrl click 5 keyup ctrl" # Zoom out
+#    command: 'xdotool key ctrl+minus'
+    threshold: 0.1
 
+threshold:
+  swipe: 0.6
+  pinch: 1
+
+interval:
+  swipe: 0.6
+  pinch: 1
