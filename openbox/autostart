@@ -8,15 +8,11 @@ feh --bg-fill --randomize /home/yinxcheng/.config/variety/Downloaded/* &
 # amixer &
 volumeicon &
 
-# nm-applet &
+nm-applet &
 
 # compton &
 
-# sleep 15s &
-# killall mintUpdate &
-# killall mintreport-tray &
-
-# redshift &
+redshift &
 
 # brightnessctl &
 # inotifywatch &
