@@ -9,7 +9,8 @@ swipe:
 #    down:
 #      command: "xdotool key super" # Activity
     up:
-      command: 'xdotool key Control_L+F10' # Workspace overview
+      command: 'xdotool key Control_L+F10' # Workspace overview for KDE
+      # command: 'xdotool key Control_L+Alt_L+Down' # Workspace overview for Linux Mint
     down:
       command: 'xdotool key Shift_L+Alt_L+Tab'
 
